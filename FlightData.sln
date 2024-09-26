@@ -7,6 +7,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.API", "FlightDat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01,API", "01,API", "{1E833E42-5BEF-474B-AEBE-A621112600E1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FCD7A065-6084-4725-BA2B-666576431841}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.BusinessLogic", "02.BusinessLogic", "{72EF8471-D484-4641-9786-6FF41C333660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Database", "03.Database", "{FBD16E5C-118D-4137-8272-46C4542D4637}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Infrastructure", "04.Infrastructure", "{96A67B1C-0B27-40EB-8E96-08B3698681A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.HttpRequests", "05.HttpRequests", "{3DAE9335-06A4-4D4E-82E5-A12DFDC8B6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.BusinessLogic", "FlightData.BusinessLogic\FlightData.BusinessLogic.csproj", "{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Models", "FlightData.Models\FlightData.Models.csproj", "{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Database", "FlightData.Database\FlightData.Database.csproj", "{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Repositories", "FlightData.Repositories\FlightData.Repositories.csproj", "{98319CDE-91FB-478F-8B00-0D3866E11B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Utils", "FlightData.Utils\FlightData.Utils.csproj", "{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +40,37 @@ Global
 		{287C2075-753D-4525-8777-BCE48DFDD95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{287C2075-753D-4525-8777-BCE48DFDD95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{287C2075-753D-4525-8777-BCE48DFDD95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98319CDE-91FB-478F-8B00-0D3866E11B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98319CDE-91FB-478F-8B00-0D3866E11B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98319CDE-91FB-478F-8B00-0D3866E11B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98319CDE-91FB-478F-8B00-0D3866E11B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{287C2075-753D-4525-8777-BCE48DFDD95B} = {1E833E42-5BEF-474B-AEBE-A621112600E1}
+		{0F7AA2B0-FA2F-4ABB-BEAE-0F9A62EB6888} = {72EF8471-D484-4641-9786-6FF41C333660}
+		{90F5B159-902B-4DEF-B1C1-D5E71FAE5BDF} = {72EF8471-D484-4641-9786-6FF41C333660}
+		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B} = {FBD16E5C-118D-4137-8272-46C4542D4637}
+		{98319CDE-91FB-478F-8B00-0D3866E11B52} = {FBD16E5C-118D-4137-8272-46C4542D4637}
+		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965} = {96A67B1C-0B27-40EB-8E96-08B3698681A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E30E059C-CE19-4376-9A38-BBFB2D4CE324}
