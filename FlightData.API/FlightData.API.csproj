@@ -13,4 +13,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FlightData.BusinessLogic\FlightData.BusinessLogic.csproj" />
+    <ProjectReference Include="..\FlightData.Database\FlightData.Database.csproj" />
+    <ProjectReference Include="..\FlightData.Models\FlightData.Models.csproj" />
+    <ProjectReference Include="..\FlightData.Repositories\FlightData.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
