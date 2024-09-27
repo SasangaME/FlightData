@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Repositories", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.Utils", "FlightData.Utils\FlightData.Utils.csproj", "{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightData.BusinessLogic.Tests", "FlightData.BusinessLogic.Tests\FlightData.BusinessLogic.Tests.csproj", "{6A728B66-144D-4CD7-A516-6FC93DFBCF22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A728B66-144D-4CD7-A516-6FC93DFBCF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A728B66-144D-4CD7-A516-6FC93DFBCF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A728B66-144D-4CD7-A516-6FC93DFBCF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A728B66-144D-4CD7-A516-6FC93DFBCF22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{9A4D49DC-A8F5-42FC-880F-B6E99C235D4B} = {FBD16E5C-118D-4137-8272-46C4542D4637}
 		{98319CDE-91FB-478F-8B00-0D3866E11B52} = {FBD16E5C-118D-4137-8272-46C4542D4637}
 		{6651B7E8-90ED-4CAF-8ACD-EE0C30AD2965} = {96A67B1C-0B27-40EB-8E96-08B3698681A8}
+		{6A728B66-144D-4CD7-A516-6FC93DFBCF22} = {72EF8471-D484-4641-9786-6FF41C333660}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E30E059C-CE19-4376-9A38-BBFB2D4CE324}
