@@ -1,6 +1,11 @@
 using FlightData.API.Config;
+using FlightData.Database.Context;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<FlightDataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FlightData")));
 
 // Add services to the container.
 builder.Services.AddDependencyServices();
