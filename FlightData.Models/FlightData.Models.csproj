@@ -10,7 +10,6 @@
     <Folder Include="DTOs\" />
     <Folder Include="Entities\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Exceptions\" />
   </ItemGroup>
 
 </Project>
