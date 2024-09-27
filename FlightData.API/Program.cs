@@ -1,4 +1,5 @@
 using FlightData.API.Config;
+using FlightData.API.Middleware;
 using FlightData.Database.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<FlightDataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FlightData")));
+
+builder.Services.AddExceptionHandler<ExceptionHandler>();
 
 // Add services to the container.
 builder.Services.AddDependencyServices();
@@ -25,6 +28,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseExceptionHandler(opt => { });
 
 app.UseAuthorization();
 

@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Middleware\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 
