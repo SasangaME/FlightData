@@ -1,6 +1,14 @@
+using FlightData.API.Config;
+using FlightData.Database.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<FlightDataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FlightData")));
+
 // Add services to the container.
+builder.Services.AddDependencyServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
