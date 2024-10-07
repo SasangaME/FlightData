@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FlightData.BusinessLogic.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FlightData.BusinessLogic.Config
 {
@@ -6,7 +7,8 @@ namespace FlightData.BusinessLogic.Config
     {
         public static IServiceCollection AddBusinessLogicServices(this IServiceCollection services)
         {
-            return services;
+            return services
+                .AddScoped<IRoleService, RoleService>();
         }
     }
 }

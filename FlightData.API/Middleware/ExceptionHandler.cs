@@ -25,7 +25,7 @@ public class ExceptionHandler : IExceptionHandler
             Title = exception.Message,
             Detail = exception.StackTrace,
             Instance = $"{httpContext.Request.Method} {httpContext.Request.Path}"
-        });
+        }, cancellationToken);
 
         return true;
     }

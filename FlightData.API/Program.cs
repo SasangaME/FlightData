@@ -1,12 +1,19 @@
+using AutoMapper;
 using FlightData.API.Config;
 using FlightData.API.Middleware;
 using FlightData.Database.Context;
+using FlightData.Models.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<FlightDataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FlightData")));
+
+var mapperConfig = new MapperConfiguration(
+    config => { config.AddProfile(new FlightDataProfile()); });
+var mappper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mappper);
 
 builder.Services.AddExceptionHandler<ExceptionHandler>();
 

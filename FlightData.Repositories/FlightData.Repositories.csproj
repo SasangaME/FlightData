@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FlightData.Database\FlightData.Database.csproj" />
+    <ProjectReference Include="..\FlightData.Models\FlightData.Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FlightData.Repositories.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FlightData.Repositories.Config
 {
@@ -6,7 +7,8 @@ namespace FlightData.Repositories.Config
     {
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            return services;
+            return services
+                .AddScoped<IRoleRepository, RoleRepository>();
         }
     }
 }
