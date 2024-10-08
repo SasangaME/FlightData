@@ -22,10 +22,7 @@ public class RoleService(IRoleRepository roleRepository) : IRoleService
     public async Task<Role?> FindById(int id)
     {
         var role = await roleRepository.FindById(id);
-        if (role is null)
-        {
-            throw new NotFoundException($"role not found for id: {id}");
-        }
+        if (role is null) throw new NotFoundException($"role not found for id: {id}");
 
         return role;
     }
@@ -44,7 +41,6 @@ public class RoleService(IRoleRepository roleRepository) : IRoleService
         existingRole.Name = role.Name;
         existingRole.Description = role.Description;
         existingRole.UpdatedAt = DateTime.Now;
-#nullable disable
         await roleRepository.Update(role);
         return role;
     }
